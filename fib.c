@@ -13,13 +13,13 @@ long long *memo_i; // For iterative
 // Recursive Fibonacci with memoization
 long long fib_r(int n) {
     if (n == 0) {
-        return 0;  // Handle base case n == 0
+        return 0;  
     }
     if (n == 1) {
-        return 0;  // Fix: The first Fibonacci number is 0
+        return 0;  
     }
     if (n == 2) {
-        return 1;  // Fix: The second Fibonacci number is 1
+        return 1;  
     }
     if (memo_r == NULL) {
         memo_r = (long long *)malloc((n + 1) * sizeof(long long));
@@ -38,9 +38,9 @@ long long fib_r(int n) {
 
 // Iterative Fibonacci with memoization
 long long fib_i(int n) {
-    if (n == 0) return 0;  // Handle base case n == 0
-    if (n == 1) return 0;  // Fix: The first Fibonacci number is 0
-    if (n == 2) return 1;  // Fix: The second Fibonacci number is 1
+    if (n == 0) return 0;  
+    if (n == 1) return 0;  
+    if (n == 2) return 1;  
     
     if (memo_i == NULL) {
         memo_i = (long long *)malloc((n + 1) * sizeof(long long));
